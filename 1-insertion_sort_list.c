@@ -6,10 +6,8 @@
 #include "sort.h"
 
 /**
- * swap_nodes - Swap two nodes in a listint_t doubly-linked list.
- * @h: A pointer to the head of the doubly-linked list.
- * @n1: A pointer to the first node to swap.
- * @n2: The second node to swap.
+ * insertion_sort_list - Swap two nodes in a listint_t doubly-linked list.
+ * @list: list of node
  */
 void insertion_sort_list(listint_t **list)
 {
