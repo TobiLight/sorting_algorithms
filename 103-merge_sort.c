@@ -5,8 +5,7 @@
 
 #include "sort.h"
 
-void merge_subarr(int *, int *, size_t, size_t,
-                  size_t);
+void merge_subarr(int *, int *, size_t, size_t, size_t);
 void merge_sort_recursive(int *, int *, size_t, size_t);
 void merge_sort(int *, size_t);
 
