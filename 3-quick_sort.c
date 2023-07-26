@@ -7,11 +7,12 @@
 
 /**
  * quicksort_helper - Quick sort helper function
+ * @array: Array
+ * @size: size
  * @low: low
  * @high: high
  *
  */
-
 void quicksort_helper(int *array, size_t size, int low, int high)
 {
 	int pivot = array[high];
