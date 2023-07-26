@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdbool.h>
+
+/*
+ * File: sort.h
+ * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ */
 
 /**
  * struct listint_s - Doubly linked list node
@@ -26,5 +32,11 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
+void swap_front_node(listint_t **, listint_t **, listint_t **);
+void swap_back_node(listint_t **, listint_t **, listint_t **);
+void cocktail_sort_list(listint_t **);
+int get_max_value(int *, int);
+void counting_sort(int *, size_t);
+void merge_sort(int *array, size_t size);
 
-#endif
+#endif /* SORT_H */
