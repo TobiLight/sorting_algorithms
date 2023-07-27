@@ -19,29 +19,26 @@ void insertion_sort_list(listint_t **list)
 	curr = (*list)->next;
 	while (curr != NULL)
 	{
-		head = (*list);
 		next = curr->next;
-		while (head != curr && curr->n > head->n)
-			head = head->next;
-		if (head != curr)
+		head = curr->prev;
+		while (head != NULL && curr->n < head->n)
 		{
-			if (curr->prev != NULL)
-				curr->prev->next = curr->next;
-			if (curr->next != NULL)
-				curr->next->prev = curr->prev;
+			head->next = curr->next;
 
-			curr->next = head;
+			if (curr->next != NULL)
+				curr->next->prev = head;
+
 			curr->prev = head->prev;
-			head->next->prev = curr->next;
-			if (head->prev == NULL)
-				*list = curr;
-			else
-			{
+			curr->next = head;
+			if (head->prev != NULL)
 				head->prev->next = curr;
-				head->prev = curr;
-			}
+			else
+				*list = curr;
+
+			head->prev = curr;
+			head = curr->prev;
+			print_list((const listint_t *)*list);
 		}
-		print_list((const listint_t *)*list);
 		curr = next;
 	}
 }
