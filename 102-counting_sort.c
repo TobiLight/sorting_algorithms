@@ -1,6 +1,6 @@
 /*
  * File: 102-counting_sort.c
- * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ * Authors: Oluwatobiloba Light
  */
 
 #include "sort.h"

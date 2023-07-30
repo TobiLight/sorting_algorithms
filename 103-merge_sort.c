@@ -1,6 +1,6 @@
 /*
  * File: 103-merge_sort.c
- * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ * Authors: Oluwatobiloba Light
  */
 
 #include "sort.h"
