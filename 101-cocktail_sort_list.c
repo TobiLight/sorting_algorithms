@@ -1,6 +1,6 @@
 /*
  * File: 101-cocktail_sort_list.c
- * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ * Authors: Oluwatobiloba Light
  */
 
 #include "sort.h"
