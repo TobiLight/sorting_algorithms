@@ -5,8 +5,6 @@
 
 #include "sort.h"
 
-void max_heapify(int *array, size_t size, size_t base, size_t root);
-
 /**
  * max_heapify - Turn a binary tree into a complete binary heap.
  *
