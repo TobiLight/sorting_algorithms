@@ -40,5 +40,6 @@ void counting_sort(int *, size_t);
 void merge_sort(int *array, size_t size);
 void max_heapify(int *array, size_t size, size_t base, size_t root);
 void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 
 #endif /* SORT_H */
