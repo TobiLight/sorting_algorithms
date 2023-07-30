@@ -29,7 +29,7 @@ void max_heapify(int *array, size_t size, size_t base, size_t root)
 
 	if (large != root)
 	{
-		temp = array + root;
+		temp = *(array + root);
 		*(array + root) = *(array + large);
 		*(array + large) = temp;
 		print_array(array, size);
