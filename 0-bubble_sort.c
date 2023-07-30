@@ -1,3 +1,8 @@
+/*
+ * File: 0-bubble_sort.c
+ * Author: Oluwatobiloba Light
+ */
+
 #include "sort.h"
 
 /**
