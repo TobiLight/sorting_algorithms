@@ -36,7 +36,6 @@ void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
         buff[k] = (subarr[i] < subarr[j]) ? subarr[i++] : subarr[j++];
         k++;
     }
-
     while (i < mid)
     {
         buff[k++] = subarr[i];
@@ -54,7 +53,6 @@ void merge_subarr(int *subarr, int *buff, size_t front, size_t mid,
         subarr[i] = buff[k++];
         i++;
     }
-
     printf("[Done]: ");
     print_array(subarr + front, back - front);
 }
@@ -99,6 +97,5 @@ void merge_sort(int *array, size_t size)
         return;
 
     merge_sort_recursive(array, buff, 0, size);
-
     free(buff);
 }
