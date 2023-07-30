@@ -26,14 +26,15 @@ void selection_sort(int *array, size_t size)
 		j = i + 1;
 		while (j < size)
 		{
-			if (array[j] < array[*smallest])
+			if (array[j] < *smallest)
 				smallest = array + j;
+
 			j++;
 		}
 		if ((array + i) != smallest)
 		{
-			temp = array + i;
-			*(array + i) = smallest;
+			temp = *(array + i);
+			*(array + i) = *smallest;
 			*smallest = temp;
 			print_array(array, size);
 		}
