@@ -51,7 +51,6 @@ void counting_sort(int *array, size_t size)
 		free(sorted);
 		return;
 	}
-
 	i = 0;
 	while (i < (max + 1))
 	{
