@@ -8,7 +8,7 @@
 
 /*
  * File: sort.h
- * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ * Authors: Oluwatobiloba Light
  */
 
 /* Comparison direction macros for bitonic sort */
