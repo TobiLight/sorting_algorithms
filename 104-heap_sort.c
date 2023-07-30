@@ -1,4 +1,4 @@
-/**
+/*
  * File: 104-heap_sort.c
  * Author: Oluwatobiloba Light
  */
