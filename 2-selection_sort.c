@@ -1,6 +1,6 @@
 /*
  * File: 2-selection_sort.c
- * Authors: Oluwatobiloba Light & Favour Uzochukwu
+ * Authors: Oluwatobiloba Light
  */
 
 #include "sort.h"
@@ -14,24 +14,27 @@
 
 void selection_sort(int *array, size_t size)
 {
-	size_t smallest, i = 0, j;
-	int temp;
+	size_t i = 0, j;
+	int *smallest, temp;
+
+	if (array == NULL || size < 2)
+		return;
 
 	while (i < size - 1)
 	{
-		smallest = i;
+		smallest = array + i;
 		j = i + 1;
 		while (j < size)
 		{
-			if (array[j] < array[smallest])
-				smallest = j;
+			if (array[j] < array[*smallest])
+				smallest = array + j;
 			j++;
 		}
-		if (smallest != i)
+		if ((array + i) != smallest)
 		{
-			temp = array[i];
-			array[i] = array[smallest];
-			array[smallest] = temp;
+			temp = array + i;
+			*(array + i) = smallest;
+			*smallest = temp;
 			print_array(array, size);
 		}
 		i++;
